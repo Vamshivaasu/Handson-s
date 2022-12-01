@@ -1,0 +1,54 @@
+
+.details{
+    background-color:rgb(29, 22, 22) ;
+    position: relative;
+    padding-top: 300px;
+}
+.sale{
+    background-color: gold;
+    align-items: center;
+    text-align:center;
+    width: 99.5%;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    top:5px ;
+    left: 5px;
+}
+img{
+    padding-top: 15px;
+}
+h3{
+    font-size: 50px;
+    color: white;
+}
+h2{
+    color: rgb(29, 22, 22);
+    font-size: 50px;
+    margin-top: 23px;
+}
+p{  
+    font-size: 24px;
+    padding-left: 25px;
+    color: yellow;
+    margin-top: -80px;
+}
+h4{
+    font-size: 40px;
+    padding-left: 35px;
+    color: yellow;
+}
+h5{
+    font-size: 50px;
+    padding-left: 15px;
+    color: white;
+    margin-top: 11px;
+    
+}
+h6{
+    font-size: 24px;
+    color: white;
+    padding-left: 35px;
+    margin-top: -53px;
+
+}
