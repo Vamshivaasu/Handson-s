@@ -1,0 +1,134 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    border: 10px groove greenyellow;
+    width: 100%;
+    margin: 20px;
+}
+.parent{
+    position: relative;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.leftcorner{
+    border: 10px solid rgb(180, 6, 6);
+    border-radius: 40px;
+    background-color: black;
+    color: azure;
+    height: 250px;
+    width: 500px;
+    padding-top: 30px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    font-size: 30px;
+   
+}
+.middle{
+    border: 10px solid rgb(180, 6, 6);
+    border-radius: 60px;
+    background-color: black;
+    color: azure;
+    height: 100px;
+    width: 400px;
+    padding-top: 60px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top: 60px;
+    left: 400px; 
+    font-size: 20px;
+
+}
+.rightcorner{
+    border: 10px solid rgb(180, 6, 6);
+    border-radius: 40px;
+    background-color: black;
+    color: azure;
+    height: 250px;
+    width: 500px;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size:  30px; 
+
+}
+.form{
+    border: 5px dashed rgb(180, 6, 6);
+    background-color: white;
+    height: 750px;
+    width: 30%;
+    position: absolute;
+    text-align: center;
+    top: 450px;
+    left: 900px;
+    color: red;
+    font-size: 20px;
+}
+input[type="email"] {
+    text-align: center;
+}
+label {
+        display: block;
+}
+h2{
+    color: black;
+}
+.offers{
+    background-color: aquamarine;
+    border: 8px solid rgb(43, 42, 42);
+    height: 400px;
+    width: 500px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    padding-top: 160px;
+    position: absolute;
+    top: 600px;
+    left: 200px;
+
+}
+.menu{
+    background-color: black;
+    color: white;
+    border: 10px solid rgb(180, 6, 6);
+    border-radius: 80px;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 1260px;
+    left: 700px;
+    padding-top: 50px;
+    font-size: 50px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 1500px;
+    left: 70px;
+
+}
+.flex > div{
+    background-color: rgb(123, 198, 241);
+    width:550px;
+    height: 600px;
+    margin: 10px;
+    text-align: center;
+    border: 5px solid green;
+    border-radius: 20px;
+    color: rgb(18, 18, 138);
+    font-style: bold;
+    font-size: 40px;
+}
+
+
+
+
+   
