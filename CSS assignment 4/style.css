@@ -1,0 +1,149 @@
+*{
+    width: 100%;
+    
+}
+
+div.head{
+    background-color: blue;
+    background-image: linear-gradient(to right, red, green, yellow);
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-size: 30px;
+}
+div.list{
+    background-color: grey;
+    border: 3px solid red;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    width: 60%;
+    margin: auto;
+  
+}
+.parent{
+    background-color: rgb(0, 184, 184);
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 210px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.parent > div{
+    background-color: aqua;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 400px;
+    height: 100px;
+  
+}
+.c4{
+    position: absolute;
+    background-color: aqua;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 400px;
+    height: 100px;
+    top: 350px;
+    left: 1005px;
+
+}
+.head2{
+    background-color: aqua;
+    background-image: linear-gradient(to right, red, yellow, red);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.performers{
+    background-color: aqua;
+    background-image: radial-gradient(ellipse, blue, aqua, green);
+    border: 2px solid green;
+    border-radius: 10px;
+    height:200px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 30px;
+}
+.performers > div{
+    text-align: center;
+    font-size: 18px;
+    background-color: yellow;
+    border: 1px solid red;
+    text-decoration: underline;
+    color: red;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.carrer{
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+.doubt{
+    background-color: green;
+     color: white;
+     text-align: center;
+     font-size: 30px;
+}
+.percent{
+    background-color: rgb(12, 170, 243);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+
+}
+.results{
+    background-color: rgb(36, 0, 59);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+
+}
+.lorem{
+    background-color: orangered;
+    color: white;
+    font-size: 30px;
+    
+
+    grid-column: 1 / span 3;
+    grid-row: 3;
+
+    
+}
+.faculty{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+
+    grid-column: 4;
+    grid-row: 1 / span 3;
+    
+ 
+}
+.all{
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
