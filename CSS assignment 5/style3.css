@@ -1,0 +1,83 @@
+body{
+    box-sizing: border-box;
+    border: 10px solid;
+    border-color: white green white orange;
+}
+.sky{
+    position: relative;
+    width: 100%;
+    
+}
+.head{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    top: 0;
+    left: 490px;
+}
+.city{
+    height: 500px;
+    position: absolute;
+    bottom: 149px;
+}
+.sun{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    
+}
+.road{
+    position: absolute;
+    bottom: 0;
+    animation: road 15s infinite;
+    
+}
+@keyframes road {
+    100%{
+        transform: translateX(-1000px);
+    }
+    
+}
+.flag{
+    position: absolute;
+    bottom: 165px;
+    left: 600px;
+}
+.flag2{
+    position: absolute;
+    bottom: 165px;
+    left: 600px;
+    transform: rotate(-180deg);
+}
+.car{
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+}
+.wheel1{
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+    left: 1106px;
+   
+}
+.wheel img{
+    animation: wheel linear infinite 1s ;
+}
+
+.wheel2{
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+    left: 496px;
+  
+}
+@keyframes wheel {
+   
+      100% {
+        transform: rotate(360deg);
+      }
+    
+}

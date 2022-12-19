@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Roboto&family=Sacramento&display=swap');
+
+
+.sahara{
+    position: relative;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+h2{
+    font-size: 50px;
+    margin: 10px;
+}
+p{
+    font-size: 30px;
+}
+.text{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: white;
+}
+.explore{
+    background-color: aliceblue;
+    color: white;
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+}
+.nav{
+    position: absolute;
+    top: 80px;
+    right: 110px;
+    word-spacing: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.flex{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 150px;
+    left: 920px;
+}
+.flex > div{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 18px;
+    padding-left: 10px;
+ 
+}
+.flex > div:hover{
+    transform:scale(1.2);
+}
+.image{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+}
+h4{
+    font-size: 40px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 0;
+}
+.box1{
+    background-image: url(./pic-1.png);
+}
+.box2{
+    background-image: url(./pic-2.png);
+}
+.box3{
+    background-image: url(./pic-3.png);
+}
+.box4{
+    background-image: url(./pic-4.png);
+}
+
+@media only screen and (max-width: 856px) {
+    *{
+        width: 100%;
+        display: block;
+
+    }
+    .sahara{
+        width: 856px;
+    }
+    .flex > div{
+        height: 300px;
+        width: 600px;
+        border-radius: 20px;
+        margin: 18px;
+        padding-left: 10px;
+     
+    }
+    .box1{
+        background-image: url(./pic-1.png);
+        height: 300px;
+        width: 600px;
+    }
+}
+
+
+
+

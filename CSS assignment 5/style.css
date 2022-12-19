@@ -4,3 +4,173 @@ body{
 h1{
     text-align: center;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: brown;
+    border: 2px solid black;
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes box1 {
+    0%{
+        transform: skew(-30deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}   
+.box2{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: purple;
+    border: 2px solid black;
+
+    animation-name: box2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes box2 {
+    0%{
+       transform: skewY(0deg);
+    }
+    33%{
+        transform: skewY(30deg);
+    }
+    66%{
+        transform: skewY(0deg);
+    }
+    100%{
+        transform: skewY(-30deg);
+    }
+
+}
+.container3{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+}   
+.box3{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: dodgerblue;
+    border: 2px solid black;
+
+    animation-name: box3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes box3{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(180deg);
+    }
+    66%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+    
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box41{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: blueviolet;
+    border: 2px solid black;
+
+    animation : box41 3s infinite;
+}
+.box42{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: blueviolet;
+    border: 2px solid black;
+
+    animation : box42  3s infinite;
+}
+.box43{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: blueviolet;
+    border: 2px solid black;
+
+    animation : box43 3s infinite;
+}
+@keyframes box41 {
+    0%{
+        transform: scaleX(100%);
+
+    }
+    33%{
+        transform: scaleX(50%);
+
+    }
+    66%{
+        transform: scaleX(50%);
+
+    }
+    100%{
+        transform: scaleX(100%);
+
+    }
+    
+}
+@keyframes box42 {
+    0%{
+        transform: scaleY(100%);
+
+    }
+    33%{
+        transform: scaleY(50%);
+
+    }
+    66%{
+        transform: scaleY(50%);
+
+    }
+    100%{
+        transform: scaleY(100%);
+
+    }
+
+}
+@keyframes box43 {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(180deg);
+    }
+    66%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
