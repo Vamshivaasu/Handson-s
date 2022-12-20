@@ -14,7 +14,7 @@
 
 }
 h2{
-    font-size: 50px;
+    font-size: 100px;
     margin: 10px;
 }
 p{
@@ -86,29 +86,70 @@ h4{
 .box4{
     background-image: url(./pic-4.png);
 }
+.back-img{
+    display: none;
+    width: 100%;
+}
 
 @media only screen and (max-width: 856px) {
-    *{
-        width: 100%;
-        display: block;
+    .sahara{
+        position: relative;
+        background-image: url(./pic-1.png);
 
     }
-    .sahara{
-        width: 856px;
+    .back-img{
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    
+    }
+    .text{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        color: white;
+    }
+    h2{
+    font-size: 50px;
+    }
+    .para1{
+        font-size: 20px;
+    }
+    .nav{
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        word-spacing: 15px;
+    }
+    a{
+        font-size: 20px;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 160px;
+        left: 930px;
     }
     .flex > div{
-        height: 300px;
         width: 600px;
-        border-radius: 20px;
-        margin: 18px;
-        padding-left: 10px;
-     
+        position: relative;
+        top: 193px;
+        left: -800px;
     }
-    .box1{
-        background-image: url(./pic-1.png);
-        height: 300px;
-        width: 600px;
+    .flex > div:hover{
+        transform:scale(1.2);
     }
+
 }
 
 
