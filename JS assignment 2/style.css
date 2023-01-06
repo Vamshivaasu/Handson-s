@@ -1,0 +1,11 @@
+h1{
+text-align: center;
+}
+pre{
+    border:1px solid black;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: aqua;
+}
