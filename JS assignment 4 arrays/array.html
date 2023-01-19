@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY </title>
+</head>
+<body>
+    <h2>
+        1.Find the Product.
+    </h2>
+    <pre>
+        const Find_Prod = (array, N) => 
+{
+ let result = 1;
+  for (let i = 0; i < N; i++)
+  {
+   result = result * array[i]; 
+  }
+  return result;
+
+};
+    </pre>
+    <h2>
+        2.Find the Sum.
+    </h2>
+    <pre>
+        const Find_Sum = (array, N) => 
+{
+ let sum = 0;
+  for (let i = 0; i < array.length; i++) 
+    {
+    sum += array[i]; 
+    }
+     return sum; 
+};
+    </pre>
+    <h2>
+        3.Count Occurrences
+    </h2>
+    <pre>
+        const findCount = (N, K, Arr) => 
+{
+  let count = 0; 
+  for(let i=0;i < N;i++)  
+  {
+    if(K === Arr[i])
+    {
+      count++;
+    }
+  }
+  return count;
+};
+    </pre>
+    <h2>
+        4.Even Odd
+    </h2>
+    <pre>
+        const findEvenOdd = (N, Arr) => 
+{
+  var sumEven = 0;
+  var sumOdd = 0;
+  for(var i=0; i< N;i++)
+  {
+    if(Arr[i]%2==0)
+    {
+      sumEven = sumEven + Arr[i];
+    }
+    else
+    {
+      sumOdd = sumOdd + Arr[i];
+    }
+  }
+  B =[];
+  B[0] = sumEven;
+  B[1] = sumOdd
+  return B;
+};
+ 
+    </pre>
+
+    <h2>
+        5.Find whether the number is present or not
+    </h2>
+    <pre>
+        const Find_Num = (array,N,M) => 
+{
+  
+};
+ 
+    </pre>
+    <h2>
+        6.Higher Age
+    </h2>
+    <pre>
+            const highAge = (N, Arr) => 
+{
+  var newArr= [];
+ for(var i=0;i< N;i++)   
+ {
+   if(Arr[i]>=18)
+   {
+     newArr.push(Arr[i]);
+   }
+ }
+ return (newArr);
+};
+    </pre>
+    <h2>
+        7.Increment the Array Elements
+    </h2>
+    <pre>
+        const Inc_Arr = (array,N) => 
+{
+  var answer = " ";
+  for(let i=0; i< N; i++)
+{
+ array[i]+=1;
+}
+ for(let i=0; i < N; i++)
+ {
+   answer = answer + array [i] + " " ;
+ }
+ console.log(answer);
+
+};
+    </pre>
+    <h2>
+        8.Pass or Fail
+    </h2>
+    <pre>
+        const isAllPass = (N, Arr) => 
+{
+  let count = 0;
+  for(let i=0;i< N;i++)
+  {
+    if(Arr[i]>=32)
+    {
+      count++;
+    }
+  }
+  if(count===N)
+  {
+    return 'YES';
+  }
+  else
+  {
+    return 'NO'
+  }
+};
+    </pre>
+    <h2>
+        9.Unique Color Shirt
+    </h2>
+    <pre>
+        
+function Unique_Shirts (arr,N) 
+{
+let freq = [];
+for(let i=0;i< 1001;i++)
+{
+ freq[i]=0;
+}
+for(let i=0;i< N;i++)
+{
+  freq[arr[i]]++;
+}
+let ans=0;
+for(let i=0;i< 1001;i++)
+{
+  if(freq[i]===1)
+  {
+    ans++
+  }
+}
+return ans;
+}
+    </pre>
+    <h2>
+        10.Min and Max
+    </h2>
+    <pre>
+         function arrayMin(arr) 
+ {
+  let min=arr[0];
+  N=arr.length;
+  for(let i=0;i< N;i++)
+  {
+    if(arr[i+1]< min)
+    {
+      min=arr[i+1];
+    }
+  }
+  return min;
+ }
+
+ function arrayMax(arr) 
+ {
+ let max=arr[0];
+ N=arr.length;
+ for(let i=0;i< N;i++)
+ {
+   if(arr[i+1]> max)
+   {
+     max=arr[i+1];
+   }
+ }
+ return max;
+ }
+    </pre>
+
+    <h2>
+        11.Birthday Game
+    </h2>
+    <pre>
+        function Birthday_Game(arr,D ,M) 
+{
+ 
+
+}
+    </pre>
+</body>
+</html>
