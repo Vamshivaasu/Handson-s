@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maps and sets</title>
+</head>
+<body>
+    <h2>You are given a string (STR) of length N, consisting of only the lower case English alphabet. Your task is to remove all the duplicate occurrences of characters in the string.</h2>
+    <pre>function removeDuplicate(str, n)
+    {
+        // Used as index in the modified string
+        var index = 0;
+ 
+        // Traverse through all characters
+        for (var i = 0; i < n; i++)
+        {
+ 
+            // Check if str[i] is present before it
+            var j;
+            for (j = 0; j < i; j++)
+            {
+                if (str[i] == str[j])
+                {
+                    break;
+                }
+            }
+ 
+            // If not present, then add it to
+            // result.
+            if (j == i)
+            {
+                str[index++] = str[i];
+            }
+        }
+         
+        return str.join("").slice(str, index);
+    }
+ 
+    // Driver code
+        var str = "geeksforgeeks".split("");
+        var n = str.length;
+        document.write(removeDuplicate(str, n));</pre>
+
+    <h2>You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)</h2>
+    <pre>function countStr(n, bCount, cCount)
+{
+ 
+    // Base cases
+    if (bCount < 0 || cCount < 0) return 0;
+    if (n == 0) return 1;
+    if (bCount == 0 && cCount == 0) return 1;
+   
+    // Three cases, we choose, a or b or c
+    // In all three cases n decreases by 1.
+    let res = countStr(n - 1, bCount, cCount);
+    res += countStr(n - 1, bCount - 1, cCount);
+    res += countStr(n - 1, bCount, cCount - 1);
+   
+    return res;
+}
+ 
+// Driver Code
+    let n = 3; // Total number of characters
+    document.write(countStr(n, 1, 2));</pre>
+</body>
+</html>
