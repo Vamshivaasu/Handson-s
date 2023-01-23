@@ -16,3 +16,7 @@ chkbtn.addEventListener("click",function(){
         sc.innerText="Your Guess is Low"
     }
 })
+
+
+
+
