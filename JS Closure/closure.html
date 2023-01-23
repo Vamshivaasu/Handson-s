@@ -49,16 +49,15 @@ output:-1 and 0
 
 </pre>
 <h2>Q4.Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.</h2>
-<pre>function areaRectangle(width, length)
-    {
-        let area = width * length;
-        return area;
-    }
-
-    
-    let width = 5;
-    let length = 6;
-    document.write("Area = " + areaRectangle(width, length) + "<br>");</pre>
+<pre>  function outer(length){
+  function inner(breadth){
+      console.log(length*breadth)
+  }
+  inner(20)
+}
+outer(10);
+Output:- 200
+</pre>
     <h2>Q5.Take a variable in outer function and create an inner function to increase the counter every time it is called</h2>
     <pre>function outer() {
         let str = "GeeksforGeeks";
