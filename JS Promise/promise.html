@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMISE</title>
+</head>
+<body>
+    <h2>1.Write one example explaining how you can write a callback function.</h2>
+    <pre>function Sum(a, b){
+        return a+b;
+    }
+    function Calculate (name, num1){
+        console.log(name, num1);
+    }
+    Calculate("EA19", Sum(10,9))
+
+    <br>
+    <br>
+    OTPUT:- EA19 19
+ 
+    </pre>
+    <h2>2.Explain Callback hell</h2>
+    <pre>let count = 0
+        setTimeout(() => {
+          console.log(++count);
+          setTimeout(() => {
+              console.log(++count);
+              setTimeout(() => {
+                  console.log(++count);
+                  setTimeout(() => {
+                      console.log(++count);
+                      setTimeout(() => {
+                          console.log(++count);
+                          setTimeout(() => {
+                              console.log(++count);
+                              setTimeout(() => {
+                                  console.log(++count);
+                                  
+                                },7000)
+                              
+                            },6000)
+                          
+                        },5000)
+                      
+                    },4000)
+                  
+                },3000)
+              
+            },2000)
+          
+        },1000)</pre>
+        <h2>3.</h2>
+</body>
+</html>
