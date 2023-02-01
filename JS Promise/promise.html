@@ -51,6 +51,84 @@
             },2000)
           
         },1000)</pre>
-        <h2>3.</h2>
+        <h2>3."Create a promise function accepting an argument, if yes is passed to the function then it should go to resolved state and print Promise Resolved, and if nothing is passed 
+            then it should go to reject the state and catch the error and print Promise Rejected "</h2>
+            <pre> const PromiseFun = new Promise((resovle, reject) =>{
+                let count =1;
+                if(count === 1){
+                    resovle("Yes, count value is One");
+                }
+                else{
+                    reject("No, count is Different");
+                }
+            })
+            PromiseFun.then((x)=> console.log("Resovle Part",x)).catch((err)=> console.log("Error Part",err))</pre>
+            <h2>4.Create examples to explain callback function</h2>
+            <pre>// function
+                function greet(name) {
+                    console.log('Hi' + ' ' + name);
+                }
+                
+                greet('Peter'); // Hi Peter</pre>
+            <h2>5.Create examples to explain callback hell function</h2> 
+            <pre>const mainFunction = (callback) => {
+                setTimeout(() => {
+                    callback([2, 3, 4]);
+                }, 2000)
+            }
+              
+            // Add function
+            const add = (array) => {
+                let sum = 0;
+                for(let i of array) {
+                    sum += i;
+                }
+                console.log(sum);
+            }
+              
+            // Calling main function
+            mainFunction(add);</pre>  
+            <h2>6.Create examples to explain promises function</h2> 
+            <pre>let myPromise = new Promise(function(myResolve, myReject) {
+                // "Producing Code" (May take some time)
+                
+                  myResolve(); // when successful
+                  myReject();  // when error
+                });
+                
+                // "Consuming Code" (Must wait for a fulfilled Promise)
+                myPromise.then(
+                  function(value) { /* code if successful */ },
+                  function(error) { /* code if some error */ }
+                );</pre>
+                <h2>7.Create examples to explain async await function</h2>
+                <pre>   const getData = async() => {
+                    var data = "Hello World";
+                    return data;
+                    }
+                      
+                    getData().then(data => console.log(data));</pre>
+
+                <h2>8.Create examples to explain promise.all function</h2>    
+                <pre>
+                    p1 = Promise.resolve(50);
+                    p2 = 200
+                    p3 = new Promise(function(resolve, reject) {
+                        setTimeout(resolve, 100, 'geek');
+                    });
+                 
+                    Promise.all([p1, p2, p3]).then(function(values) {
+                        document.write(values);
+                    });</pre>
+                <h2>9."Write the promise function to print numbers from 1 to 7, in which 1 should be printed after 1 sec, 2 should be printed after 2 sec, 3 should be printed after 3 sec, and so on.</h2>    
+                <pre>const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+                    let chain = Promise.resolve();
+                    for (let count = 25; count >= 0; --count) {
+                      chain = chain.then(() => {
+                        console.log(count);
+                        return wait(7000);
+                      });
+                    }</pre>
 </body>
 </html>
